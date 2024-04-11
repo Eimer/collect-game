@@ -2,26 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Development server
+## Run application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Clone this project, then run 'npm install' command to update all packages. 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/game`.
 
-## Code scaffolding
+##Simple documentation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Classes
 
-## Build
+## Actor - base abstract class that can anithing. Usign just for others object to extend. It know some info about a world.
+Can be using to implements something in a future
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Unit - class that provide to create some objects on a map. Exdends from Actor. Can be spawned, can move and know info about a world
 
-## Running unit tests
+## Animal - class that implemets an animal logic do everithing same unit and can patrol on a game scene
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Hero - class that implemets a hero logic. Extends from Unit. Can do everething same unit, can be moved by user, can add an animal to group
 
-## Running end-to-end tests
+## World-service - simple service that can be using to manipulate a world (get/set world coords, e.t.c)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Helpers-service - simple service that can be using to semplify some methods. Do not know about a world and units
