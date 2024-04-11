@@ -22,4 +22,4 @@ Can be using to implements something in a future
 
 ## World-service - simple service that can be using to manipulate a world (get/set world coords, e.t.c)
 
-## Helpers-service - simple service that can be using to semplify some methods. Do not know about a world and units
+## Helpers-service - simple service that can be using to simplify some methods. Do not know about a world and units
